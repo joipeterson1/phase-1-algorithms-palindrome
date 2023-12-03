@@ -1,13 +1,34 @@
-function isPalindrome(word) {
-  // Write your algorithm here
-}
+function isPalindrome(word)
+    {
+        // Initializing an empty string to store the reverse
+        // of the original str
+        let rev = "";
+ 
+        // Initializing a new boolean variable for the
+        // answer
+        let booleanAns = false;
+ 
+        for (let i = word.length - 1; i >= 0; i--){
+            rev = rev + word.charAt(i);
+            //adds the empty string to the reverse of each character
+        }
+ 
+        // Checking if both the strings are equal
+        if (word === rev) {
+            booleanAns = true;
+        } else {
+          booleanAns = false
+        }
+        return booleanAns
+    }
 
 /* 
-  Add your pseudocode here
+  define the function
+  use the if else statements
 */
 
 /*
-  Add written explanation of your solution here
+  IF the string is a palindrom, return true. IF it is not , return false
 */
 
 // You can run `node index.js` to view these console logs
